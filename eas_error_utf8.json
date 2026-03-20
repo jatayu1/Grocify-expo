@@ -1,0 +1,51 @@
+﻿{
+  "id": "070beb1c-b367-4c45-8b2d-6db2a9b76a9b",
+  "status": "ERRORED",
+  "platform": "ANDROID",
+  "error": {
+    "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+    "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+  },
+  "artifacts": {},
+  "fingerprint": {
+    "id": "019d0aef-4a9f-7515-8529-7ff358399c3e",
+    "hash": "2c9a195f961e89f340ce47d47c270acf1ffc747b"
+  },
+  "initiatingActor": {
+    "id": "de76b97b-2788-4248-8ef3-953c45b0dd14",
+    "displayName": "jatayu007"
+  },
+  "logFiles": [
+    "https://job-logs.eascdn.net/production/070beb1c-b367-4c45-8b2d-6db2a9b76a9b/1774004947872-6ff5ad86-8ce6-4d89-84af-ad652c5504cd.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260320%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260320T111054Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=e53bc415ad065b40528747264f42dc65cc8e843596fb65f8e4d38a8e7d51d719051555b28014128d13ca20442ffb49bb61f09e75803bec4797a1ed32f1ce4c99db5850e418c6746fa036d5d9ab78e6406321a426d76377d78c3c275d85921cff8703495dc0001c316d87417435875fa9fe1defc9ba6fc41f47c00af36875c588f4d6c2494b2b358de5b1d1c42892222d8357333e4f1151d6dc470fefa5658142573c2deec0ff38a23737935376cfcfa43ca536656b4e3a2d72cebc9d2b84e8b6bff451c6d9cee83864d669f98265e358b8a2fde4371f3a009efc0fd7fbdada88e78bdcce155904fd0275b6eaf6aca2a7591962d2006a08ba4adc761593f6ce2d",
+    "https://job-logs.eascdn.net/production/070beb1c-b367-4c45-8b2d-6db2a9b76a9b/1774004958543-f6bc6283-65a1-472d-814f-6979e0a589e5.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260320%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260320T111054Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=64cd469b0ffe6e2425e7e86728f37f44bb1b01dceac85932f5655803689f2773c0bfbb950d92e607f2236176958c562104d4296b14b6617f8cb94ed9b9b7a6b4f0c371f76dd6802a4e5211bc619652359e275e38278177e5a3e965c68d9b32aa330c3aabdb0a9621930c3621c7d20e6c0fc9c29147ca4b3e1bd6cc7dec714448c715a13f4c34b05e3ae4f91d41794a6a962f773b3d12202b8e08a5622c91069f70ff4cb7f6c4cf30970baaa20f83beb7619a2e3e6e59dc741602696cbcda7d53279d1e4ef9125a145dc42b68a451e83a8bbd72eb11853d54ddd3e4b9d396c6e8dd54858a057d1bc948a38aae34932c0c993119b0f054be897ba422005d592675",
+    "https://job-logs.eascdn.net/production/070beb1c-b367-4c45-8b2d-6db2a9b76a9b/1774004958768-2ddaa345-76a2-416d-b327-a791106dd056.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260320%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260320T111054Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=8db4d803d0b174d7e0fcc1172a06e0c7361478ef81ef24964ec41bb63729eafd7d5adb8e3a3c8821e368e5b78a296898a427e55a3943c1603ee92e81182970c1ab14d808f71018ed79039990fcb05968b7e8ebf7cc594a6a5e059a64cf127c94ef417f4eb05b0c91a61e5a64dcc517324be26d57b46fffeadb438c07dd21cea87c04dfba92065fa3f4410ace5d68faf7af86e838481a13683485e7a9fa08e679392cb3dba4750a9b959587bb9e7b4ce4e867a18217404e6099a8e3612d099fa12d1a00717c0e05c64a23b3b14dc7a24cc430c3ca485063610f3787bb1ac891e8d6142dd5bbdb190ee4f3f2d4a5d46ccfe28c526699406cbb4dc0c1c42ed13fd2",
+    "https://job-logs.eascdn.net/production/070beb1c-b367-4c45-8b2d-6db2a9b76a9b/1774004958953-9be83fae-7f09-42a4-a8a3-2892f534790b.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260320%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260320T111054Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=74bdb752f09091083a740c97b16a58302e105f6c23606141884b58a35afe4b3afc260ef614c172d6f6488bcd05bd7f22ade0b16eda28906ae36500ba079e651ccebb0318a0a1f4edbb2106ce8b616260c0909f8781ec4f031d370747b1982579239948b7ec2686b59c15eb24c22e77556ae25b48d933da09f27fb1805df4f752f8331b3781048af30b51c9baa89afadcc5723c6eaacafee702e87776458c94e08d1edd24354e765a2ff7d6375c1c6fcd50d04623748c5f83275146591e2cd3332d05d6a633833335d3fd304ef8bfefd136805ba34a824fdc7b89bfcd10c34166354a231eeffecad861849d623ddd523f9cde063d3cf3bdae041435ff1cfded33"
+  ],
+  "project": {
+    "id": "24f56741-feeb-418a-acda-91c51be97fe9",
+    "name": "grocify",
+    "slug": "grocify",
+    "ownerAccount": {
+      "id": "d1bd4ef0-9f41-4e10-bd33-f16f5bd135ee",
+      "name": "jatayu007"
+    }
+  },
+  "distribution": "INTERNAL",
+  "buildProfile": "development",
+  "sdkVersion": "55.0.0",
+  "appVersion": "1.0.0",
+  "appBuildVersion": "1",
+  "gitCommitHash": "2601d45eb45faae8c4af66de61078f152646c508",
+  "gitCommitMessage": "tailwind setup",
+  "priority": "NORMAL",
+  "createdAt": "2026-03-20T11:09:07.554Z",
+  "updatedAt": "2026-03-20T11:12:18.727Z",
+  "completedAt": "2026-03-20T11:12:16.660Z",
+  "expirationDate": "2026-04-03T11:09:07.600Z",
+  "isForIosSimulator": false,
+  "metrics": {
+    "buildWaitTime": 185,
+    "buildQueueTime": 51805,
+    "buildDuration": 136746
+  }
+}
