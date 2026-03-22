@@ -25,7 +25,6 @@ export default function Page() {
                     <UserButton />
                 </View>
 
-                <UserProfileView style={{ flex: 1 }}/>
             </Show>
         </View>
     )
