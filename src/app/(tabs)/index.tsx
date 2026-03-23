@@ -1,8 +1,6 @@
-import { Show, useUser } from '@clerk/expo'
-import { useClerk } from '@clerk/expo'
-import { UserButton, UserProfileView } from '@clerk/expo/native'
-import { Link } from 'expo-router'
-import { Text, View, Pressable, StyleSheet } from 'react-native'
+import { Show, useClerk, useUser } from '@clerk/expo'
+import { UserButton } from '@clerk/expo/native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 
 export default function Page() {
     const { user } = useUser()
@@ -31,25 +29,25 @@ export default function Page() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    paddingTop: 60,
-    gap: 16,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  button: {
-    backgroundColor: '#0a7ea4',
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-    borderRadius: 8,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: '#fff',
-    fontWeight: '600',
-  },
+    container: {
+        flex: 1,
+        padding: 20,
+        paddingTop: 60,
+        gap: 16,
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
+    button: {
+        backgroundColor: '#0a7ea4',
+        paddingVertical: 12,
+        paddingHorizontal: 24,
+        borderRadius: 8,
+        alignItems: 'center',
+    },
+    buttonText: {
+        color: '#fff',
+        fontWeight: '600',
+    },
 })
