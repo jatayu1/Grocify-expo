@@ -1,57 +1,73 @@
+import TabScreenBackground from '@/components/TabScreenBackground'
+import ListHeroCard from '@/components/list/ListHeroCard'
+import PendingItemCard from '@/components/list/PendingItemCard'
+import CompletedItems from '@/components/list/CompletedItems'
 import { useGroceryStore } from '@/store/grocery-store'
-import { Show, useClerk, useUser } from '@clerk/expo'
-import { UserButton } from '@clerk/expo/native'
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { useClerk, useUser } from '@clerk/expo'
+import React from 'react'
+import { ScrollView, View, Text, FlatList } from 'react-native'
 
-export default function Page() {
-    const { user } = useUser()
-    const { signOut } = useClerk()
 
-    const {isLoading, items} = useGroceryStore()
+export default function ListScreen() {
+    const {items} = useGroceryStore()
 
-    console.log(items);
+    const pendingItems = items.filter(item => !item.purchased);
+
     return (
-        <View style={styles.container} className='bg-background text-muted-foreground'>
+        <FlatList
+            className='flex-1 bg-background'
+            data={pendingItems}
+            renderItem={({item}) => <PendingItemCard item={item}/>}
+            keyExtractor={item => item.id}
+            contentContainerStyle={{
+                padding: 20,
+                gap: 14,
+            }}
+            contentInsetAdjustmentBehavior='automatic'
+            ListHeaderComponent={
+                <View style={{gap:14, paddingTop: 20}}>
+                    <TabScreenBackground />
+                    <ListHeroCard />
 
-            <Text style={styles.title}>Welcome!q</Text>
+                    <View className="flex-row items-center justify-between px-1">
+                        <Text className="text-sm font-semibold uppercase tracking-[1px] text-muted-foreground">
+                        Shopping items
+                        </Text>
 
-            <Show when="signed-in">
-
-                <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
-
-                <Pressable style={styles.button} onPress={() => signOut()}>
-                    <Text style={styles.buttonText}>Sign out</Text>
-                </Pressable>
-
-                <View style={{ width: 36, height: 36, borderRadius: 18, overflow: 'hidden' }}>
-                    <UserButton />
+                        <Text className="text-sm text-muted-foreground">{pendingItems.length} active</Text>
+                    </View>
                 </View>
+            }
+            ListEmptyComponent={<Text className='text-center text-muted-foreground'>No items</Text>}
+            ListFooterComponent={<CompletedItems />}
+        />
 
-            </Show>
-        </View>
+        // study : flatlist, legendlist, flashlist
+
+
+
+
+        // first version
+        // <ScrollView className='flex-1 bg-background py-4' showsVerticalScrollIndicator={false}
+        //     contentContainerStyle={{
+        //         padding: 20,
+        //         gap: 14,
+        //     }}
+        // >
+        //     <TabScreenBackground />
+        //     <ListHeroCard />
+
+        //     <View className="flex-row items-center justify-between px-1">
+        //         <Text className="text-sm font-semibold uppercase tracking-[1px] text-muted-foreground">
+        //         Shopping items
+        //         </Text>
+
+        //         <Text className="text-sm text-muted-foreground">{pendingItems.length} active</Text>
+        //     </View>
+
+        //     {pendingItems.map(item => < PendingItemCard key={item.id} item={item}/>)}
+
+        //     <CompletedItems />
+        // </ScrollView>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 20,
-        paddingTop: 60,
-        gap: 16,
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-    },
-    button: {
-        backgroundColor: '#0a7ea4',
-        paddingVertical: 12,
-        paddingHorizontal: 24,
-        borderRadius: 8,
-        alignItems: 'center',
-    },
-    buttonText: {
-        color: '#fff',
-        fontWeight: '600',
-    },
-})
