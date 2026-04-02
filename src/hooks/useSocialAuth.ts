@@ -16,12 +16,12 @@ export const useSocialAuth = () => {
                 strategy,
                 redirectUrl: Linking.createURL('/', { scheme: 'grocify' })
             });
-            if (!createdSessionId && !setActive) {
+            if (createdSessionId && setActive) {
+                await setActive({ session: createdSessionId });
+            } else {
                 Alert.alert("Sign-in incomplete", "Sign-in did not complete. Please try again.");
                 return;
             }
-            
-            await setActive({ session: createdSessionId });
             
         } catch (error) {
             console.log(error);

@@ -27,6 +27,7 @@ const PlannerScreen = () => {
             contentContainerStyle={{
                 padding: 20,
                 gap: 14,
+                paddingTop: 40,
             }}
             keyboardShouldPersistTaps="handled"
             bottomOffset={80}

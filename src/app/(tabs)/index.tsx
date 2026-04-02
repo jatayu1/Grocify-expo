@@ -25,7 +25,7 @@ export default function ListScreen() {
             }}
             contentInsetAdjustmentBehavior='automatic'
             ListHeaderComponent={
-                <View style={{gap:14, paddingTop: 20}}>
+                <View style={{gap:14, paddingTop: 40}}>
                     <TabScreenBackground />
                     <ListHeroCard />
 
